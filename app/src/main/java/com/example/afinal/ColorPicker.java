@@ -42,19 +42,19 @@ public class ColorPicker extends AppCompatActivity {
                 if (rbRed.isChecked()) {
                     SharedPreferences sp = getSharedPreferences("MyColorPreferences", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = sp.edit();
-                    editor.putInt("colorfield", 0xFFFF0000);
+                    editor.putInt("colorfield", 0xFFD3D3D3);
                     editor.apply();
 
                 } else if (rbBlue.isChecked()) {
                     SharedPreferences sp = getSharedPreferences("MyColorPreferences", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = sp.edit();
-                    editor.putInt("colorfield", 0xFF0000FF);
+                    editor.putInt("colorfield", 0xFF6495ED);
                     editor.apply();
 
                 } else if (rbPurple.isChecked()) {
                     SharedPreferences sp = getSharedPreferences("MyColorPreferences", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = sp.edit();
-                    editor.putInt("colorfield", 0xFF953553);
+                    editor.putInt("colorfield", 0xFFCBC3E3);
                     editor.apply();
 
                 }
